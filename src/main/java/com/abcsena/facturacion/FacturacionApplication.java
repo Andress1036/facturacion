@@ -8,6 +8,7 @@ public class FacturacionApplication {
 
 	public static void main(String[] args) {
 		
+		System.out.println("Mensaje prueba git");
 		System.out.println("Hola ADSO");
 		SpringApplication.run(FacturacionApplication.class, args);
 		
