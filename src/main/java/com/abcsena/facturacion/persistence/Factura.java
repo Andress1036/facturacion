@@ -54,6 +54,12 @@ public class Factura {
 	public void setIdCliente(Integer idCliente) {
 		this.idCliente = idCliente;
 	}
+
+	@Override
+	public String toString() {
+		return "Factura [idFactura=" + idFactura + ", fecha=" + fecha + ", total=" + total + ", idCliente=" + idCliente
+				+ "]";
+	}
 	
 	
 }

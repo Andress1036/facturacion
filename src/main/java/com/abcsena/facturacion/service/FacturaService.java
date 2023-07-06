@@ -10,9 +10,13 @@ import com.abcsena.facturacion.persistence.Factura;
 
 @Service
 public class FacturaService {
-
+ 
+	private List<Factura> listaFactura = new ArrayList<>();
+	// getFacturas
+	//Obtiene una lista de facturas
+	
 	public List<Factura> getFacturas(){
-		List<Factura> listaFactura = new ArrayList<>();
+		
 		Factura factura1 = new Factura(100, new Date(), 100000, 789594);
 		Factura factura2 = new Factura(101, new Date(), 120000, 845849);
 		Factura factura3 = new Factura(102, new Date(), 145000, 365489);
@@ -25,6 +29,19 @@ public class FacturaService {
 		listaFactura.add(factura5);
 		return listaFactura;
 	}
+
+	public void almacenarFactura (Factura factura) {
+		listaFactura.add(factura);
+	}
+	
+	public List<Factura> getListaFactura() {
+		return listaFactura;
+	}
+
+	public void setListaFactura(List<Factura> listaFactura) {
+		this.listaFactura = listaFactura;
+	}
+	
 	
 	
 }
